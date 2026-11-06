@@ -55,7 +55,6 @@ def main():
         from vnpy_ctastrategy import CtaStrategyApp
         from vnpy_datamanager import DataManagerApp
         from vnpy_ctabacktester import CtaBacktesterApp
-        from vnpy_charttrader import ChartTraderApp
 
         main_engine.add_app(CtaStrategyApp)
         print("✓ CTA策略引擎加载成功")
@@ -66,9 +65,6 @@ def main():
         main_engine.add_app(CtaBacktesterApp)
         print("✓ 回测引擎加载成功")
 
-        main_engine.add_app(ChartTraderApp)
-        print("✓ 图表交易模块加载成功")
-        
         # 创建主窗口
         main_window = MainWindow(main_engine, event_engine)
         main_window.showMaximized()
