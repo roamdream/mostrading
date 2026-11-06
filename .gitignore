@@ -1,0 +1,132 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 虚拟环境
+venv/
+vnpy_env/
+env/
+ENV/
+
+# 配置文件
+.env
+config/*.json
+!config/*.json.example
+config/social_media_local.md
+
+# 发布工具本地状态（csdn-article-publish 生成的 文章→ID 映射，机器本地）
+csdn_article_map.json
+
+# 数据文件 (使用MySQL数据库，不需要本地数据目录)
+*.db
+*.sqlite
+*.csv
+*.h5
+*.hdf5
+
+# 日志文件
+logs/
+*.log
+
+# 回测结果
+backtests/results/
+backtests/reports/
+
+# 开发文档默认忽略；仅白名单中的使用指南进入版本库
+docs/*
+!docs/README.md
+!docs/futures_data_download.md
+!docs/enhanced_chart_widget_guide.md
+!docs/dual_chart_guide.md
+!docs/QUAD_CHART_GUIDE.md
+!docs/quad_chart_quickstart.md
+!docs/multi_interval_chart_guide.md
+!docs/trading_sessions_guide.md
+!docs/trading_session_simple_guide.md
+!docs/daily_end_and_hour_sessions_guide.md
+!docs/auto_load_indicators_guide.md
+!docs/independent_indicators_guide.md
+!docs/multi_period_trade_lines_guide.md
+
+# IDE
+.vscode/
+.idea/
+.codebuddy/
+.cursor/
+.kiro/
+.specify/
+specs/
+.claude/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# 临时文件
+*.tmp
+*.temp
+*.bak
+*.backup
+*.zip
+articles/
+CLAUDE.md
+
+# 扩展指标（需额外安装）
+# 默认忽略 core/indicators/ 下所有文件，只保留已追踪的基础指标
+core/indicators/*
+!core/indicators/__init__.py
+!core/indicators/indicator_base.py
+!core/indicators/dyna_array_manager.py
+!core/indicators/boll_item.py
+!core/indicators/multi_sma_item.py
+!core/indicators/multi_ema_item.py
+!core/indicators/rsi_item.py
+!core/indicators/macd_item.py
+!core/indicators/dmi_item.py
+
+# 付费功能模块（ATM Trader Pro 专属）
+vnpy_charttrader/
+core/ai_decision/
+core/ai_clients/
+core/ai_backtester/
+core/models/ai_analysis_data.py
+config/ai_keys_config.py
+config/ai_models_config.py
+config/ai_prompts_config.py
+scripts/run_ai_backtest.py
+scripts/test_ai_backtest.py
+scripts/test_ai_backtest_core.py
+
+# IDE / tool temp
+.zcode/
+.kiro/
+.claude/
+.gstack/
+
+# 个人 AI/ML 学习计划、研究记录与生成产物（仅保留本地）
+/research/
+/.ml4t-daily/
